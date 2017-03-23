@@ -1,48 +1,53 @@
-WORKSPACE 
-------------------------------------
-
-    1. see _readme.txt in workspace folder.
-    2. first, configure all workspace
-
-INSTALL (can be empty)
-------------------------------------
-    1. npm install
-    2. DB Configuration: Change _rootUrl in ./lib/client-lib/src/ApiCalls.ts constructor with your API URL
+#HOVEROOMBA
 
 
-FOLDERS 
-------------------------------------
+
+##Description
+    A little game done with React + Typescript. Move a hover robot through a resizable room for cleaning the dirty patches. You can see little demonstration on the [demo site](https://kataclan.github.io/#/) 
+
+##Folders 
     1.  src (input)
          |- app                 - all code files
          |- style               - all css files
-         |- www                 - index.html and all resources - images,  libs, styles ... 
+         |- www                 - index.html  
+            |- public           - All resources - images,  libs, styles ...
 
     2.  dist (output)
          |- debug
-             |- ...             - all www src/www/ files and folders
+             |- public             - all www src/www/ files and folders
              |- app.js          - compiled source code
              |- app.maps.js     - sourcemaps
              |- app.css         - concat source styles
          |- release
-             |- ...             - all www src/www/ files and folders
+             |- public             - all www src/www/ files and folders
              |- app.js          - compiled source code and minified
              |- app.css         - concat source styles and minified
      2. lib  
         |- [lib-name] 
-             |- dist            - js code. To include, copy to "./www/lib" and import in apps HTML (<script src"../../../www/lib/[lib name]"></script>)
-             |- src             - ts code. To include use require and relative path. 
-
-BUILD
------------------------------------
-
+             |- interfaces      - TS Interfaces
+             |- models          - TS Models
+             |- utils.js        - Util Function definitions
     
+##Installation and running (can be empty)
+------------------------------------
+    On a terminal:
+
+    1. run npm install -> Install packgages and dependencies
+    2. Follow building steps. ( run #gulp debug )
+    3. run npm start
+    4. Open a browser and go to http://localhost:5000/
+
+##Building
+-----------------------------------
 
     [ Main Commands ]    
     1. gulp clean               - remove "./dist/" folder
-    2. gulp build-debug         - to "./bin/debug"   copy "src/www", build "src/style/", build "scr/app"
-    3. gulp build-release       - to "./bin/release" copy "src/www", build "src/style/", build "scr/app"
-    4. gulp building            - task build-debug and watch for any chandes in "scr/app" and "src/style"
+    2. gulp build-debug         - copies builded and transpiled "src/www", build "src/style/", build "scr/app" to "./dist/debug"   
+    3. gulp build-release       - copies builded and transpiled "src/www", build "src/style/", build "scr/app" to "./dist/release" 
+    4. gulp building            - task build-debug and watch for any changes in "scr/app" and "src/style"
 
-    [ Other Commands ]    
-    1. gulp www-debug           - to "./bin/debug"   copy "src/www"
-    2. gulp www-release         - to "./bin/release" copy "src/www"
+
+
+
+
+
