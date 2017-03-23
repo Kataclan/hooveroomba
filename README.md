@@ -1,11 +1,13 @@
-#HOVEROOMBA
+HOVEROOMBA
 
 
 
-##Description
+Description
+------------------------------------
     A little game done with React + Typescript. Move a hover robot through a resizable room for cleaning the dirty patches. You can see little demonstration on the [demo site](https://kataclan.github.io/#/) 
 
-##Folders 
+Folders 
+------------------------------------
     1.  src (input)
          |- app                 - all code files
          |- style               - all css files
@@ -28,7 +30,7 @@
              |- models          - TS Models
              |- utils.js        - Util Function definitions
     
-##Installation and running (can be empty)
+Installation and running (can be empty)
 ------------------------------------
     On a terminal:
 
@@ -37,7 +39,7 @@
     3. run npm start
     4. Open a browser and go to http://localhost:5000/
 
-##Building
+Building
 -----------------------------------
 
     [ Main Commands ]    
