@@ -1,10 +1,6 @@
-HOVEROOMBA
+#HOVEROOMBA
 
-
-
-Description
-------------------------------------
-    A little game done with React + Typescript. Move a hover robot through a resizable room for cleaning the dirty patches. You can see little demonstration on the [demo site](https://kataclan.github.io/#/) 
+ A little game done with React + Typescript. Move a hover robot through a resizable room for cleaning the dirty patches. You can see little demonstration on the [demo site](https://kataclan.github.io/#/)
 
 Folders 
 ------------------------------------
